@@ -13,4 +13,8 @@
         display: none !important;
     }
 
+    .leading-3{
+        line-height: 3.5rem !important;
+    }
+
 }
