@@ -1,0 +1,16 @@
+.gradient {
+    background: linear-gradient(90deg, #d53369 0%, #621c75 100%);
+  }
+
+.shadow-navbar{
+    background: linear-gradient(90deg, #d53369 0%, #621c75 100%) !important;  
+  }
+
+
+@media (max-width: 640px) {
+
+    .display-none-s{
+        display: none !important;
+    }
+
+}

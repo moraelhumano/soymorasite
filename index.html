@@ -11,20 +11,11 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
-    <style>
-      .gradient {
-        background: linear-gradient(90deg, #d53369 0%, #621c75 100%);
-      }
-
-        .shadow-navbar{
-            background: linear-gradient(90deg, #d53369 0%, #621c75 100%) !important;  
-        }
-
-    </style>
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <!--Nav-->
@@ -40,34 +31,46 @@
         <div class="block lg:hidden pr-4">
           <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
           </button>
         </div>
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
-              <a href="https://www.instagram.com/soymoratech/" target="_black">
+        <div class="w-full shadow-navbar lg:hidden flex flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20 justify-end	" id="nav-content">
+            <a href="https://www.instagram.com/soymoratech/" class="mr-3" target="_black">
                 <img class="h-12" src="assets/img/instagram-logo.svg" alt="">
-              </a>
-            </li>
-            <li class="mr-3">
-                <a href="https://www.facebook.com/soyelmora" target="_black">
-                    <img class="h-12" src="assets/img/facebook-logo.svg" alt="">
-                </a>
-            </li>
-            <li class="mr-3">
-                <a href="https://www.linkedin.com/in/mora-developer/" target="_black">
-                    <img class="h-12" src="assets/img/linkedin-logo.svg" alt="">
-                  </a>
-            </li>
-          </ul>
+            </a>
+            <a href="https://www.facebook.com/soyelmora" class="mr-3" target="_black">
+                <img class="h-12" src="assets/img/facebook-logo.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/mora-developer/" class="mr-3" target="_black">
+                <img class="h-12" src="assets/img/linkedin-logo.svg" alt="">
+            </a>
           <button
             id="navAction"
           ></button>
           </button>
         </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 bg-gray-100" id="nav-content">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a href="https://www.instagram.com/soymoratech/" target="_black">
+                  <img class="h-12" src="assets/img/instagram-logo.svg" alt="">
+                </a>
+              </li>
+              <li class="mr-3">
+                  <a href="https://www.facebook.com/soyelmora" target="_black">
+                      <img class="h-12" src="assets/img/facebook-logo.svg" alt="">
+                  </a>
+              </li>
+              <li class="mr-3">
+                  <a href="https://www.linkedin.com/in/mora-developer/" target="_black">
+                      <img class="h-12" src="assets/img/linkedin-logo.svg" alt="">
+                    </a>
+              </li>
+            </ul>
+            <button id="navAction" class="bg-white text-gray-800"></button>
+            
+          </div>
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
@@ -89,7 +92,7 @@
           </button> -->
         </div>
         <!--Right Col-->
-        <div class="w-full md:w-2/5 py-6 text-right flex justify-end">
+        <div class="w-full md:w-2/5 py-6 text-right flex justify-end display-none-s">
           <img class="w-full md:w-5/5 z-500" src="assets/img/mora.png" />
         </div>
       </div>
