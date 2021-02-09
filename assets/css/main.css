@@ -17,4 +17,27 @@
         line-height: 3.5rem !important;
     }
 
+    .sm-text-center{
+      text-align: center !important;
+    }
+
+    .sm-justify-center{
+      justify-content: center;
+    }
+
+    .sm-button-content{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .sm-button-content a{
+      display: flex;
+      justify-content: center;
+    }
+
+    .sm-button{
+
+    }
+
 }
